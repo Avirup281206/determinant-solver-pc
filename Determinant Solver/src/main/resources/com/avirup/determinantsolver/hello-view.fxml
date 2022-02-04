@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="anchor_pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#solve_runner" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.avirup.determinantsolver.HelloController">
+    <Label fx:id="label_determinant_solver" layoutX="210.0" layoutY="14.0" onKeyPressed="#solve_runner" text="Determinant Solver">
+        <font>
+            <Font size="24.0" />
+        </font>
+    </Label>
+    <Line endX="100.0" layoutX="156.0" layoutY="200.0" rotate="90.0" startX="-100.0" />
+    <Line endX="100.0" layoutX="475.0" layoutY="200.0" rotate="90.0" startX="-100.0" />
+    <TextField fx:id="field_a1" alignment="CENTER" layoutX="170.0" layoutY="111.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="A1" />
+    <TextField fx:id="field_a2" alignment="CENTER" layoutX="282.0" layoutY="111.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="A2" />
+    <TextField fx:id="field_a3" alignment="CENTER" layoutX="391.0" layoutY="111.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="A3" />
+    <TextField fx:id="field_b1" alignment="CENTER" layoutX="170.0" layoutY="175.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="B1" />
+    <TextField fx:id="field_b2" alignment="CENTER" layoutX="282.0" layoutY="175.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="B2" />
+    <TextField fx:id="field_b3" alignment="CENTER" layoutX="391.0" layoutY="175.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="B3" />
+    <TextField fx:id="field_c1" alignment="CENTER" layoutX="170.0" layoutY="245.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="C1" />
+    <TextField fx:id="field_c2" alignment="CENTER" layoutX="282.0" layoutY="245.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="C2" />
+    <TextField fx:id="field_c3" alignment="CENTER" layoutX="391.0" layoutY="245.0" onKeyPressed="#solve_runner" prefHeight="25.0" prefWidth="60.0" promptText="C3" />
+    <Button layoutX="255.0" layoutY="288.0" mnemonicParsing="false" onAction="#run_solve" onKeyPressed="#solve_runner" text="Solve">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor></Button>
+    <Button layoutX="342.0" layoutY="288.0" mnemonicParsing="false" onAction="#run_reset" text="Reset">
+        <cursor>
+            <Cursor fx:constant="HAND" />
+        </cursor></Button>
+    <TextField fx:id="field_answer" alignment="CENTER" editable="false" layoutX="233.0" layoutY="336.0" promptText="Answer" style="-fx-focus-color: -fx-control-inner-background; -fx-faint-focus-color: -fx-control-inner-background;">
+        <cursor>
+            <Cursor fx:constant="DEFAULT" />
+        </cursor>
+        <font>
+            <Font name="System Bold" size="12.0" />
+        </font></TextField>
+    <Label fx:id="label_numberFormatException" layoutX="266.0" layoutY="369.0" text="Enter Valid Input!" textFill="RED" visible="false" />
+   <Button fx:id="info_button" layoutX="560.0" layoutY="19.0" mnemonicParsing="false" onAction="#show_info">
+      <cursor>
+         <Cursor fx:constant="HAND" />
+      </cursor>
+   </Button>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</AnchorPane>
